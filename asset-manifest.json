@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/simps-quote-api/static/css/main.2bdd0d2b.chunk.css",
+    "main.js": "/simps-quote-api/static/js/main.44e39d33.chunk.js",
+    "main.js.map": "/simps-quote-api/static/js/main.44e39d33.chunk.js.map",
+    "runtime-main.js": "/simps-quote-api/static/js/runtime-main.dea2d25c.js",
+    "runtime-main.js.map": "/simps-quote-api/static/js/runtime-main.dea2d25c.js.map",
+    "static/js/2.a221046e.chunk.js": "/simps-quote-api/static/js/2.a221046e.chunk.js",
+    "static/js/2.a221046e.chunk.js.map": "/simps-quote-api/static/js/2.a221046e.chunk.js.map",
+    "index.html": "/simps-quote-api/index.html",
+    "static/css/main.2bdd0d2b.chunk.css.map": "/simps-quote-api/static/css/main.2bdd0d2b.chunk.css.map",
+    "static/js/2.a221046e.chunk.js.LICENSE.txt": "/simps-quote-api/static/js/2.a221046e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dea2d25c.js",
+    "static/js/2.a221046e.chunk.js",
+    "static/css/main.2bdd0d2b.chunk.css",
+    "static/js/main.44e39d33.chunk.js"
+  ]
+}
