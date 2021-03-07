@@ -1,17 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
+import axios from 'axios';
 //import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-//reportWebVitals();
+  
+let getQuote=()=> {
+  axios.get( 'https://simpsons-quotes-api.herokuapp.com/quotes')    
+
+   .then(response => response.data)
+    .then(data => {
+  
+    const quoteHtml = `
+      <p><strong>${data[0].quote}</strong></p>
+      <img src="${data[0].image}" />
+      <p>${data[0].character}</p>
+    `;
+    document.querySelector('.content').innerHTML = quoteHtml;
+   
+  });
+
+}
+const btn=document.querySelector('.btn')
+btn.addEventListener('click',getQuote);
+
+
+
+
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
